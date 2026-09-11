@@ -1,0 +1,22 @@
+/* Estilos personalizados para Hamburguesas */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+    color: #212529;
+}
