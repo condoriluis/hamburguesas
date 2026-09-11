@@ -1,4 +1,113 @@
-/* Estilos personalizados para Hamburguesas */
+/* Estilos Globales */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffc107 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65));
+    z-index: 1;
+}
+
+.text-shadow {
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-sm {
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fw-extrabold {
+    font-weight: 800;
+}
+
+/* Transiciones y Efectos */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+.transition-all:hover {
+    transform: translateY(-3px);
+}
+
+/* Wave Decorator */
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.hero-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.hero-wave .shape-fill {
+    fill: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 80vh;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}/* Estilos personalizados para Hamburguesas */
 body {
     background-color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
