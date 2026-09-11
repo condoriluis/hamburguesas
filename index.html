@@ -158,6 +158,90 @@
     </div>
   </div>
 </section>
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Qué dicen nuestros clientes</h2>
+        <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <p class="card-text fst-italic">"¡La mejor hamburguesa que he probado! El pan es perfecto y la carne jugosa."</p>
+                  <h5 class="card-title mt-3">María Gómez</h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <p class="card-text fst-italic">"Servicio rápido y ambiente agradable. Recomiendo la hamburguesa BBQ."</p>
+                  <h5 class="card-title mt-3">Carlos Pérez</h5>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <p class="card-text fst-italic">"Variedad de opciones vegetarianas que realmente saben a carne. ¡Impresionante!"</p>
+                  <h5 class="card-title mt-3">Laura Fernández</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" required>
+            <div class="invalid-feedback">Ingresa un correo válido.</div>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            <div class="invalid-feedback">El mensaje no puede estar vacío.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p class="mb-1">Hamburguesas © 2026 – Todos los derechos reservados.</p>
+        <p class="mb-0">
+          <a href="tel:+123456789" class="text-white me-3"><i class="bi bi-telephone"></i> +1 234 567 89</a>
+          <a href="mailto:info@hamburguesas.com" class="text-white me-3"><i class="bi bi-envelope"></i> info@hamburguesas.com</a>
+          <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script de validación de contacto -->
+    <script src="contact.js"></script>
 </body>
 </html><!DOCTYPE html>
 <html lang="es">
